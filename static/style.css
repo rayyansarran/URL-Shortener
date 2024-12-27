@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    font-family: "Anta" , sans-serif;
+    background-color: rgb(126, 117, 96);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-weight: 800;
+}
+
+.container{
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    top: 40%;
+    left: 28.5%;
+    padding: 20px 0;
+    width: 45vw;
+    border-radius: 5px;
+}
+
+.container2{
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    top: 55%;
+    left: 28.5%;
+    margin: 10px 0;
+    text-align: center;
+    width: 45vw;
+    border-radius: 5px;
+}
+
+.container form input{
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 5px 0 0 0;
+    border-radius: 15px;
+    border: 0;
+    transition: 0.8s;
+    background-color: rgb(236, 230, 218);
+    font-size: 17px;
+}
+
+.container form input:hover{
+    background-color: rgb(230, 221, 204);
+    box-shadow: 0 0 10px rgb(46, 46, 46);
+}
+
+.container button{
+    background-color: rgb(57, 88, 175);
+    background-color:inherit;
+    color: rgb(36, 35, 35);
+    border-radius: 15px;
+    border: 2px solid rgb(51, 50, 50);
+    padding: 10px 15px;
+    margin: 15px 0 0 0;
+    transition: 1s;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.container button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(87, 87, 87);
+    background-color: rgb(131, 129, 129);
+}
+
+.container2 button{
+    background-color:inherit;
+    color: rgb(51, 50, 50);
+    border-radius: 15px;
+    border: 2px solid rgb(51, 50, 50);
+    padding: 10px 15px;
+    margin: 20px;
+    transition: 1s;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.container2 button:hover{
+    cursor: pointer;
+    background-color: rgb(131, 129, 129);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    padding: 5px 10px;
+    left: 3%;
+    color: #000000;
+    border: 5px solid rgb(51, 50, 50);
+    border-radius: 10px;
+    font-size:50px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    padding: 5px 10px;
+    left: 3%;
+    color: #000000;
+    border: 5px solid rgb(51, 50, 50);
+    border-radius: 10px;
+    font-size:50px;
+}
+
+#shortenedUrl{
+    text-decoration: none;
+    color: rgb(49, 45, 35);
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#shortenedUrl:hover{
+    font-size: 22px;
+}
+
+#searchimg{
+    margin-top: 9%;
+    height: 150px;
+    width: 300px;
+}
+
+#searchimg:hover{
+    cursor: pointer;
+    animation: tada 2s infinite;
+}

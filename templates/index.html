@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <h2><i class='bx bx-link'></i>URL Shortener</h2>
+    <img id="searchimg" src="/static/Shorten-URL.png">
+    <div class="container">
+        <form method="POST" action="/">
+            <input type="text" name="long_url" placeholder="Enter URL to shorten">
+            <input type="text" name="custom_slug" placeholder="Custom slug (optional)">
+            <button type="submit">Shorten <i class='bx bx-cut bx-tada bx-flip-vertical' ></i></button>
+        </form>
+    </div>
+     <div class="container2">
+        {% if short_url %}
+        <a href="{{ short_url }}" id="shortenedUrl" target="_blank"><i class='bx bx-link bx-flashing bx-rotate-90' ></i>{{ short_url }}</a>
+        <button onclick="copyToClipboard()"><i class='bx bx-copy bx-tada bx-rotate-180' ></i> copy</button>
+        {% endif %}
+    </div>
+
+    <script src="/static/script.js"></script>
+    
+</body>
+</html>
+
+
